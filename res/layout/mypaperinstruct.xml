@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText,DuplicateIds" >
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textStyle="bold"
+            android:text="Instructions for the filter\n\n"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+               <TextView
+                   android:id="@+id/textView1"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:text="1.Choose whether you want to add a politician or a party from the first drop down list.\n\n 2. Then choose the corresponding party/politician from the second drop down list.\n\n 3. Click on &apos;Add to My Subscriptions&apos; to add it your paper.\n\n 4. Click on &apos;View my Subscriptions&apos; to view your subscribed politicians/papers.\n "
+                   android:textStyle="italic" />
+        
+    </LinearLayout>
+
+    <LinearLayout
+    
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="168dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/filter1"
+            android:prompt="@string/filter1_prompt" />
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/baddsubs"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Add To my Subscriptions" />
+
+        <Button
+            android:id="@+id/bviewsubs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View my all Subscriptions" />
+    </LinearLayout>
+
+    <LinearLayout
+  
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bMyPaper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Go to My Paper"
+            android:layout_marginTop="30dp" />
+    </LinearLayout>
+
+</LinearLayout>
